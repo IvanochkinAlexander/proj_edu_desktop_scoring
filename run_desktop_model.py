@@ -8,7 +8,7 @@ from gooey import Gooey, GooeyParser
 # print ('hello')
 def main():
 
-    """Executing script"""
+    """Running desktop app"""
 
     desc = u'Введите параметр и нажмите "Запуск"'
 
@@ -17,13 +17,13 @@ def main():
     p.add_argument('-a', '--a', default=2, type=int, help='Кол-во перевозимых детей')
     p.add_argument('-b', '--b', default=25, type=int, help='Возраст водителя')
     p.add_argument('-c', '--c', default=3, type=int, help='Кол-во детей всего')
-    p.add_argument('-d', '--d', default=2, type=int, help='Неизвестный параметр')
+    p.add_argument('-d', '--d', default=2, type=int, help='Возраст детей')
     p.add_argument('-e', '--e', default=4, type=int, help='Водительский стаж')
-    p.add_argument('-f', '--f', default=2, type=int, help='Неизвестный параметр')
+    p.add_argument('-f', '--f', default=2, type=int, help='Категории')
     p.add_argument('-s', '--s', default=3, type=int, help='Кол-во страховых случаев')
-    p.add_argument('-i', '--i', default=2, type=int, help='Неизвестный параметр')
+    p.add_argument('-i', '--i', default=2, type=int, help='Интегрированный показатель')
     p.add_argument('-k', '--k', default=1, type=int, help='Возраст автомобиля')
-    p.add_argument('-m', '--m', default=2, type=int, help='Неизвестный параметр')
+    p.add_argument('-m', '--m', default=2, type=int, help='Категория автомобиля')
 
     global args
     args = p.parse_args()
